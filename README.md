@@ -30,5 +30,7 @@ understand each tip in more indepth
  11. Extend your hardware life: Extend your hardware life to reduce your embodied carbon footprint.
 
  12. Use optimised libraries: Make use of prevalent libraries in your codebase, they've likely been optimised beyond what a single person/team could do.
-
-
+ 
+ 13. Green IT tip of the day: Extend your hardware life: Extend your hardware life to reduce your embodied carbon footprint.
+ 
+ 14. Green IT tip of the day: Make your machines work: Increase machine utilisation to get the most out of a server. Energy efficiency isn't linear.
