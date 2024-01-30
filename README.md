@@ -34,3 +34,11 @@ understand each tip in more indepth
  13. Green IT tip of the day: Extend your hardware life: Extend your hardware life to reduce your embodied carbon footprint.
  
  14. Green IT tip of the day: Make your machines work: Increase machine utilisation to get the most out of a server. Energy efficiency isn't linear.
+ 
+ 15. Green IT tip of the day: Scale to zero: Scale environments to zero if you don't need them.
+ 
+ 16. Green IT tip of the day: Rearchitect your distributed monolith: Chatty services consume more energy and networking, optimise for less communication between services.
+ 
+ 17. Green IT tip of the day: Remove unused assets: Monitor and analyze the application and the cloud bill to identify resources that are no longer used or can be reduced.
+ 
+ 18. Green IT tip of the day: Stop data littering: Set an appropriate retention policy for your data.
