@@ -31,14 +31,14 @@ understand each tip in more indepth
 
  12. Use optimised libraries: Make use of prevalent libraries in your codebase, they've likely been optimised beyond what a single person/team could do.
  
- 13. Green IT tip of the day: Extend your hardware life: Extend your hardware life to reduce your embodied carbon footprint.
+ 13. Extend your hardware life: Extend your hardware life to reduce your embodied carbon footprint.
  
- 14. Green IT tip of the day: Make your machines work: Increase machine utilisation to get the most out of a server. Energy efficiency isn't linear.
+ 14. Make your machines work: Increase machine utilisation to get the most out of a server. Energy efficiency isn't linear.
  
- 15. Green IT tip of the day: Scale to zero: Scale environments to zero if you don't need them.
+ 15. Scale to zero: Scale environments to zero if you don't need them.
  
- 16. Green IT tip of the day: Rearchitect your distributed monolith: Chatty services consume more energy and networking, optimise for less communication between services.
+ 16. Rearchitect your distributed monolith: Chatty services consume more energy and networking, optimise for less communication between services.
  
- 17. Green IT tip of the day: Remove unused assets: Monitor and analyze the application and the cloud bill to identify resources that are no longer used or can be reduced.
+ 17. Remove unused assets: Monitor and analyze the application and the cloud bill to identify resources that are no longer used or can be reduced.
  
- 18. Green IT tip of the day: Stop data littering: Set an appropriate retention policy for your data.
+ 18. Stop data littering: Set an appropriate retention policy for your data.
