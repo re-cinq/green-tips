@@ -191,8 +191,6 @@ class SnowflakeApp extends React.Component<Props, SnowflakeAppState> {
             text-decoration: none;
           }
           .print {
-            letter-spacing: 0.01px;
-            text-align: center;
             padding: 100;
           }
         `}</style>
