@@ -6,6 +6,8 @@
   "license": "MIT",
   "dependencies": {
     "d3": "^4.11.0",
+    "html2canvas": "^1.4.1",
+    "jspdf": "^2.5.1",
     "next": "^9.0.7",
     "react": "^16.10.2",
     "react-dom": "^16.10.2"

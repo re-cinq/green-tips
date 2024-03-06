@@ -11,6 +11,8 @@ import PointSummaries from '../components/PointSummaries'
 import type { Milestone, MilestoneMap, TrackId } from '../constants'
 import React from 'react'
 import TitleSelector from '../components/TitleSelector'
+import { jsPDF } from "jspdf";
+import html2canvas from 'html2canvas';
 
 type SnowflakeAppState = {
   milestoneByTrack: MilestoneMap,
@@ -18,6 +20,8 @@ type SnowflakeAppState = {
   title: string,
   focusedTrackId: TrackId,
 }
+
+
 
 const hashToState = (hash: String): ?SnowflakeAppState => {
   if (!hash) return null
@@ -125,6 +129,36 @@ class SnowflakeApp extends React.Component<Props, SnowflakeAppState> {
     }
   }
 
+  handleClick = () => {
+    console.log("HERE")
+    window.scroll(0,0)
+
+    const input = document.getElementById('matrix');
+    html2canvas(input, {
+      width: 950,
+      scale: 0.9
+    }).then((canvas) => {
+        const imgData = canvas.toDataURL('image/png');
+        const pdf = new jsPDF({
+          orientation: "p",
+          unit: "mm",
+          format: "a4",
+          precision: 5
+        });
+        const imgWidth = pdf.internal.pageSize.getWidth();
+        const imgHeight = pdf.internal.pageSize.getHeight();
+        const margin = 10; // Adjust margin as needed
+        
+        const yPos = margin;
+        // Set margins by drawing a rectangle
+        pdf.setLineWidth(0.1);
+        pdf.rect(margin, margin, imgWidth - 2 * margin, imgHeight - 2 * margin, 'S');
+
+        pdf.addImage(imgData, 'JPEG', margin, yPos, imgWidth - 2 * margin, imgHeight - 2 * margin);
+        pdf.save("download.pdf");
+      });
+  } 
+
   render() {
     return (
       <main>
@@ -140,11 +174,13 @@ class SnowflakeApp extends React.Component<Props, SnowflakeAppState> {
             border: none;
             display: block;
             border-bottom: 2px solid #fff;
-            font-size: 30px;
-            line-height: 40px;
+            font-size: 20px;
+            line-height: 60px;
             font-weight: bold;
             width: 380px;
             margin-bottom: 10px;
+            margin-top: 10px;
+            padding-top: 10px;
           }
           .name-input:hover, .name-input:focus {
             border-bottom: 2px solid #ccc;
@@ -154,14 +190,26 @@ class SnowflakeApp extends React.Component<Props, SnowflakeAppState> {
             color: #888;
             text-decoration: none;
           }
+          .print {
+            letter-spacing: 0.01px;
+            text-align: center;
+            padding: 100;
+          }
         `}</style>
         <div style={{margin: '19px auto 0', width: 142}}>
           <a href="https://medium.com/" target="_blank">
             <Wordmark />
           </a>
         </div>
-        <div style={{display: 'flex'}}>
+      <div className="mb5">
+        <button onClick={this.handleClick}>Print</button>
+      </div>
+      <div id="matrix" class="print">
+      <hr/>
+        <div  style={{display: 'flex'}}>
           <div style={{flex: 1}}>
+            <PointSummaries milestoneByTrack={this.state.milestoneByTrack} />
+            <LevelThermometer milestoneByTrack={this.state.milestoneByTrack} />
             <form>
               <input
                   type="text"
@@ -175,8 +223,6 @@ class SnowflakeApp extends React.Component<Props, SnowflakeAppState> {
                   currentTitle={this.state.title}
                   setTitleFn={(title) => this.setTitle(title)} />
             </form>
-            <PointSummaries milestoneByTrack={this.state.milestoneByTrack} />
-            <LevelThermometer milestoneByTrack={this.state.milestoneByTrack} />
           </div>
           <div style={{flex: 0}}>
             <NightingaleChart
@@ -206,6 +252,7 @@ class SnowflakeApp extends React.Component<Props, SnowflakeAppState> {
             Get the <a href="https://github.com/Medium/snowflake" target="_blank">source code</a>.
             Read the <a href="https://medium.com/p/85e078bc15b7" target="_blank">terms of service</a>.
           </div>
+        </div>
         </div>
       </main>
     )
