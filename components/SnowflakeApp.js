@@ -54,24 +54,24 @@ const emptyState = (): SnowflakeAppState => {
     name: '',
     title: '',
     milestoneByTrack: {
-      'MOBILE': 0,
-      'WEB_CLIENT': 0,
-      'FOUNDATIONS': 0,
-      'SERVERS': 0,
-      'PROJECT_MANAGEMENT': 0,
-      'COMMUNICATION': 0,
-      'CRAFT': 0,
-      'INITIATIVE': 0,
-      'CAREER_DEVELOPMENT': 0,
-      'ORG_DESIGN': 0,
-      'WELLBEING': 0,
-      'ACCOMPLISHMENT': 0,
-      'MENTORSHIP': 0,
-      'EVANGELISM': 0,
-      'RECRUITING': 0,
-      'COMMUNITY': 0
+      'GREEN_STRATEGY': 0,
+      'PROCESSES': 0,
+      'COMMITMENTS': 0,
+      'AWARENESS': 0,
+      'SOFTWARE_OPTIMISATION': 0,
+      'DESIGN_PRINCIPLES': 0,
+      'SCI': 0,
+      'EFFICIENT_LANGUAGE': 0,
+      'INFRA_OPTIMISATION': 0,
+      'ENERGY_EFFICIENCY': 0,
+      'AUTOSCALING': 0,
+      'EXTEND_LIFETIME': 0,
+      'GOVERNANCE': 0,
+      'REALTIME_EMISSIONS': 0,
+      'POLICIES': 0,
+      'PROCUREMENT': 0
     },
-    focusedTrackId: 'MOBILE'
+    focusedTrackId: 'GREEN_STRATEGY'
   }
 }
 
@@ -80,24 +80,24 @@ const defaultState = (): SnowflakeAppState => {
     name: 'Cersei Lannister',
     title: 'Staff Engineer',
     milestoneByTrack: {
-      'MOBILE': 1,
-      'WEB_CLIENT': 2,
-      'FOUNDATIONS': 3,
-      'SERVERS': 2,
-      'PROJECT_MANAGEMENT': 4,
-      'COMMUNICATION': 1,
-      'CRAFT': 1,
-      'INITIATIVE': 4,
-      'CAREER_DEVELOPMENT': 3,
-      'ORG_DESIGN': 2,
-      'WELLBEING': 0,
-      'ACCOMPLISHMENT': 4,
-      'MENTORSHIP': 2,
-      'EVANGELISM': 2,
-      'RECRUITING': 3,
-      'COMMUNITY': 0
+      'GREEN_STRATEGY': 1,
+      'PROCESSES': 2,
+      'COMMITMENTS': 3,
+      'AWARENESS': 2,
+      'SOFTWARE_OPTIMISATION': 4,
+      'DESIGN_PRINCIPLES': 1,
+      'SCI': 1,
+      'EFFICIENT_LANGUAGE': 4,
+      'INFRA_OPTIMISATION': 3,
+      'ENERGY_EFFICIENCY': 2,
+      'AUTOSCALING': 0,
+      'EXTEND_LIFETIME': 4,
+      'GOVERNANCE': 2,
+      'REALTIME_EMISSIONS': 2,
+      'POLICIES': 3,
+      'PROCUREMENT': 0
     },
-    focusedTrackId: 'MOBILE'
+    focusedTrackId: 'GREEN_STRATEGY'
   }
 }
 

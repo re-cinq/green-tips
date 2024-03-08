@@ -1,29 +1,29 @@
 // @flow
 import * as d3 from 'd3'
 
-export type TrackId = 'MOBILE' | 'WEB_CLIENT' | 'FOUNDATIONS' | 'SERVERS' |
-  'PROJECT_MANAGEMENT' | 'COMMUNICATION' | 'CRAFT' | 'INITIATIVE' |
-  'CAREER_DEVELOPMENT' | 'ORG_DESIGN' | 'WELLBEING' | 'ACCOMPLISHMENT' |
-  'MENTORSHIP' | 'EVANGELISM' | 'RECRUITING' | 'COMMUNITY'
+export type TrackId = 'GREEN_STRATEGY' | 'PROCESSES' | 'COMMITMENTS' | 'AWARENESS' |
+  'SOFTWARE_OPTIMISATION' | 'DESIGN_PRINCIPLES' | 'SCI' | 'EFFICIENT_LANGUAGE' |
+  'INFRA_OPTIMISATION' | 'ENERGY_EFFICIENCY' | 'AUTOSCALING' | 'EXTEND_LIFETIME' |
+  'GOVERNANCE' | 'REALTIME_EMISSIONS' | 'POLICIES' | 'PROCUREMENT'
 export type Milestone = 0 | 1 | 2 | 3 | 4 | 5
 
 export type MilestoneMap = {
-  'MOBILE': Milestone,
-  'WEB_CLIENT': Milestone,
-  'FOUNDATIONS': Milestone,
-  'SERVERS': Milestone,
-  'PROJECT_MANAGEMENT': Milestone,
-  'COMMUNICATION': Milestone,
-  'CRAFT': Milestone,
-  'INITIATIVE': Milestone,
-  'CAREER_DEVELOPMENT': Milestone,
-  'ORG_DESIGN': Milestone,
-  'WELLBEING': Milestone,
-  'ACCOMPLISHMENT': Milestone,
-  'MENTORSHIP': Milestone,
-  'EVANGELISM': Milestone,
-  'RECRUITING': Milestone,
-  'COMMUNITY': Milestone
+  'GREEN_STRATEGY': Milestone,
+  'PROCESSES': Milestone,
+  'COMMITMENTS': Milestone,
+  'AWARENESS': Milestone,
+  'SOFTWARE_OPTIMISATION': Milestone,
+  'DESIGN_PRINCIPLES': Milestone,
+  'SCI': Milestone,
+  'EFFICIENT_LANGUAGE': Milestone,
+  'INFRA_OPTIMISATION': Milestone,
+  'ENERGY_EFFICIENCY': Milestone,
+  'AUTOSCALING': Milestone,
+  'EXTEND_LIFETIME': Milestone,
+  'GOVERNANCE': Milestone,
+  'REALTIME_EMISSIONS': Milestone,
+  'POLICIES': Milestone,
+  'PROCUREMENT': Milestone
 }
 export const milestones = [0, 1, 2, 3, 4, 5]
 
@@ -71,93 +71,94 @@ export type Track = {
 }
 
 type Tracks = {|
-  'MOBILE': Track,
-  'WEB_CLIENT': Track,
-  'FOUNDATIONS': Track,
-  'SERVERS': Track,
-  'PROJECT_MANAGEMENT': Track,
-  'COMMUNICATION': Track,
-  'CRAFT': Track,
-  'INITIATIVE': Track,
-  'CAREER_DEVELOPMENT': Track,
-  'ORG_DESIGN': Track,
-  'WELLBEING': Track,
-  'ACCOMPLISHMENT': Track,
-  'MENTORSHIP': Track,
-  'EVANGELISM': Track,
-  'RECRUITING': Track,
-  'COMMUNITY': Track
+  'GREEN_STRATEGY': Track,
+  'PROCESSES': Track,
+  'COMMITMENTS': Track,
+  'AWARENESS': Track,
+  'SOFTWARE_OPTIMISATION': Track,
+  'DESIGN_PRINCIPLES': Track,
+  'SCI': Track,
+  'EFFICIENT_LANGUAGE': Track,
+  'INFRA_OPTIMISATION': Track,
+  'ENERGY_EFFICIENCY': Track,
+  'AUTOSCALING': Track,
+  'EXTEND_LIFETIME': Track,
+  'GOVERNANCE': Track,
+  'REALTIME_EMISSIONS': Track,
+  'POLICIES': Track,
+  'PROCUREMENT': Track
 |}
 
 export const tracks: Tracks = {
-  "MOBILE": {
-    "displayName": "Mobile",
+  "GREEN_STRATEGY": {
+    "displayName": "Green Strategy",
     "category": "A",
-    "description": "Develops expertise in native mobile platform engineering, such as iOS or Android",
+    "description": "Develops expertise in sustainable software engineering and GreenOps, integrating eco-friendly practices across IT operations.",
     "milestones": [{
-      "summary": "Works effectively within established iOS or Android architectures, following current best practices",
+      "summary": "Adopts fundamental sustainable and GreenOps practices within projects, following eco-friendly guidelines.",
       "signals": [
-        "Delivers features requiring simple local modifications",
-        "Adds simple actions that call server endpoints",
-        "Reuses existing components appropriately",
+        "Incorporates basic sustainability principles in software design",
+        "Applies energy-efficient coding practices for minimal environmental impact",
+        "Utilizes existing green components and frameworks effectively"
       ],
       "examples": [
-        "Added existing button to a different iOS surface",
-        "Add follow button for publications on Android",
-        "Fetched and displayed a new stream, using existing stream item styles",
-      ],
+        "Optimized code for reduced energy consumption in a web app",
+        "Integrated an existing low-power library for data processing",
+        "Implemented automated carbon footprint tracking for project deployments"
+      ]
     }, {
-      "summary": "Develops new instances of existing architecture, or minor improvements to existing architecture",
+      "summary": "Enhances projects with advanced sustainable design and operational efficiency, contributing to broader green initiatives.",
       "signals": [
-        "Defines new useful and appropriate proto-generated objects",
-        "Creates simple new activities on Android",
-        "Migrates code from old patterns to new patterns",
+        "Designs solutions with a focus on reducing electronic waste",
+        "Develops features that significantly lower server resource demands",
+        "Advises on eco-friendly alternatives for project requirements"
       ],
       "examples": [
-        "Upgraded SDWebImage to a new major version",
-        "Added support for rendering a new type of stream item",
-        "Prototyped a simple new feature quickly",
-      ],
+        "Redesigned a feature to extend hardware lifespan",
+        "Created a more efficient data caching strategy to reduce server load",
+        "Conducted a workshop on sustainable software practices for the team"
+      ]
     }, {
-      "summary": "Designs major new features and demonstrates a nuanced understanding of mobile platform constraints",
+      "summary": "Leads in the innovation and implementation of green architecture, setting standards for sustainability.",
       "signals": [
-        "Implements complex features with a large product surface area",
-        "Works effectively with  Android reactive programming framework",
-        "Adds support for new iOS features after a major iOS version upgrade",
+        "Pioneers new methodologies in GreenOps and sustainable engineering",
+        "Influences the adoption of green practices across multiple projects",
+        "Balances performance, cost, and environmental impact at scale"
       ],
       "examples": [
-        "Designed iOS caching strategy for offline reading",
-        "Built series reader on Android",
-        "Informed the team about recent best practice changes and deprecations",
-      ],
+        "Developed a novel algorithm reducing energy use in high-traffic systems",
+        "Led the transition to a green cloud hosting provider",
+        "Authored company-wide guidelines for sustainable software development"
+      ]
     }, {
-      "summary": "Builds complex, reusable architectures that pioneer best practices and enable engineers to work more effectively",
+      "summary": "Establishes frameworks for sustainability that influence the industry, advocating for eco-conscious tech development.",
       "signals": [
-        "Pioneers architecture migration strategies that reduce programmer burden",
-        "Fixes subtle memory management issues",
-        "Implements interactive dismissals that bring delight",
+        "Creates scalable, sustainable systems that serve as benchmarks",
+        "Mentors others in advanced GreenOps strategies",
+        "Drives significant reductions in carbon footprint and IT costs"
       ],
       "examples": [
-        "Upgraded CocoaPods to a new major version",
-        "Designed architecture for fetching and rendering stream items",
-        "Migrated Android persistance layer to reactive programming",
-      ],
+        "Designed a zero-emission data center strategy",
+        "Spearheaded a cross-industry forum on sustainable computing",
+        "Implemented a company-wide, green software framework adopted by peers"
+      ]
     }, {
-      "summary": "Is an industry-leading expert in mobile engineering or sets strategic mobile direction for an eng team",
+      "summary": "Becomes a global thought leader in sustainable software engineering, shaping the future of green technology.",
       "signals": [
-        "Defines long-term goals and ensures active projects are in service of them",
-        "Designs and builds innovative, industry-leading UI interactions",
-        "Invents new techniques to responsibly stretch limits of the Android platform",
+        "Sets visionary sustainability goals and mobilizes the industry towards them",
+        "Innovates with groundbreaking eco-friendly technologies",
+        "Champions global initiatives for sustainable computing"
       ],
       "examples": [
-        "Defined and drove complete migration plan to Swift or Kotlin",
-        "Implemented Android recycler views before platform support existed",
-        "Pioneered application-level abstractions for multi-app environment",
+        "Keynote speaker at a leading conference on sustainability in tech",
+        "Developed a widely adopted open-source tool for carbon footprint analysis",
+        "Led a successful international campaign for reducing software-induced emissions"
       ],
     }],
   },
+  
 
-  "WEB_CLIENT": {
+  "PROCESSES": {
     "displayName": "Web client",
     "category": "A",
     "description": "Develops expertise in web client technologies, such as HTML, CSS, and JavaScript",
@@ -224,7 +225,7 @@ export const tracks: Tracks = {
     }],
   },
 
-  "FOUNDATIONS": {
+  "COMMITMENTS": {
     "displayName": "Foundations",
     "category": "A",
     "description": "Develops expertise in foundational systems, such as deployments, pipelines, databases and machine learning",
@@ -291,7 +292,7 @@ export const tracks: Tracks = {
     }],
   },
 
-  "SERVERS": {
+  "AWARENESS": {
     "displayName": "Servers",
     "category": "A",
     "description": "Develops expertise in server side engineering, using technologies such as Go, NodeJS, or Scala",
@@ -358,7 +359,7 @@ export const tracks: Tracks = {
     }],
   },
 
-  "PROJECT_MANAGEMENT": {
+  "SOFTWARE_OPTIMISATION": {
     "displayName": "Project management",
     "category": "B",
     "description": "Delivers well-scoped programs of work that meet their goals, on time, to budget, harmoniously",
@@ -425,7 +426,7 @@ export const tracks: Tracks = {
     }],
   },
 
-  "COMMUNICATION": {
+  "DESIGN_PRINCIPLES": {
     "displayName": "Communication",
     "category": "B",
     "description": "Shares the right amount of information with the right people, at the right time, and listens effectively",
@@ -492,7 +493,7 @@ export const tracks: Tracks = {
     }],
   },
 
-  "CRAFT": {
+  "SCI": {
     "displayName": "Craft",
     "category": "B",
     "description": "Embodies and promotes practices to ensure excellent quality products and services",
@@ -559,7 +560,7 @@ export const tracks: Tracks = {
     }],
   },
 
-  "INITIATIVE": {
+  "EFFICIENT_LANGUAGE": {
     "displayName": "Initiative",
     "category": "B",
     "description": "Challenges the status quo and effects positive organizational change outside of mandated work",
@@ -626,7 +627,7 @@ export const tracks: Tracks = {
     }],
   },
 
-  "CAREER_DEVELOPMENT": {
+  "INFRA_OPTIMISATION": {
     "displayName": "Career development",
     "category": "C",
     "description": "Provides strategic support to engineers to help them build the career they want",
@@ -693,7 +694,7 @@ export const tracks: Tracks = {
     }],
   },
 
-  "ORG_DESIGN": {
+  "ENERGY_EFFICIENCY": {
     "displayName": "Org design",
     "category": "C",
     "description": "Defines processes and structures that enables the strong growth and execution of a diverse eng organization",
@@ -760,7 +761,7 @@ export const tracks: Tracks = {
     }],
   },
 
-  "WELLBEING": {
+  "AUTOSCALING": {
     "displayName": "Wellbeing",
     "category": "C",
     "description": "Supports the emotional well-being of group members in difficult times, and celebrates their successes",
@@ -827,7 +828,7 @@ export const tracks: Tracks = {
     }],
   },
 
-  "ACCOMPLISHMENT": {
+  "EXTEND_LIFETIME": {
     "displayName": "Accomplishment",
     "category": "C",
     "description": "Inspires day to day excellence, maximises potential and effectively resolves performance issues with compassion",
@@ -894,7 +895,7 @@ export const tracks: Tracks = {
     }],
   },
 
-  "MENTORSHIP": {
+  "GOVERNANCE": {
     "displayName": "Mentorship",
     "category": "D",
     "description": "Provides support to colleagues, spreads knowledge, and develops the team outside formal reporting structures",
@@ -961,7 +962,7 @@ export const tracks: Tracks = {
     }],
   },
 
-  "EVANGELISM": {
+  "REALTIME_EMISSIONS": {
     "displayName": "Evangelism",
     "category": "D",
     "description": "Promotes Medium to the outside world and establishes it as an attractive and thoughtful place to work",
@@ -1028,7 +1029,7 @@ export const tracks: Tracks = {
     }],
   },
 
-  "RECRUITING": {
+  "POLICIES": {
     "displayName": "Recruiting",
     "category": "D",
     "description": "Strengthens Medium's team by bringing in excellent staff members",
@@ -1095,7 +1096,7 @@ export const tracks: Tracks = {
     }],
   },
 
-  "COMMUNITY": {
+  "PROCUREMENT": {
     "displayName": "Community",
     "category": "D",
     "description": "Builds community internally, gives of themself to the team, and champions and extols company values",
